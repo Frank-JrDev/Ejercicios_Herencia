@@ -1,4 +1,5 @@
 # Ejercicios_Herencia
+Ejecicio escuela:
 Este código crea dos clases: Persona y Estudiante.
 
 Clase Persona
@@ -29,6 +30,12 @@ Estudiante: Hereda nombre y edad de Persona y agrega grado.
 Herencia: La clase Estudiante usa las propiedades de Persona y agrega algo nuevo (el grado del estudiante).
 
 Este código demuestra cómo heredar propiedades y métodos de una clase en Python, lo que hace que el código sea más fácil de entender y reutilizar.
+
+
+
+
+
+
 
 
 Ejercicio vehiculo:
@@ -74,4 +81,49 @@ Este script muestra un ejemplo de herencia en programación orientada a objetos,
 
 
 
+
+
+
+
+
+Ejercicio veterinaria:
+Este script define una jerarquía de clases en Python para modelar animales y perros. La clase Animal es la clase base y la clase Perro hereda de ella. Ambas clases incluyen un método para imprimir información sobre los objetos.
+
+Clases:
+Clase Animal:
+
+Propósito: Representa un animal genérico con atributos básicos como el nombre y la especie.
+
+Atributos:
+
+nombre: El nombre del animal (ej. "Bobby").
+
+especie: La especie del animal (ej. "Canino").
+
+Métodos:
+
+__init__(self, nombre, especie): Constructor que inicializa los atributos nombre y especie.
+
+imprimir_info(self): Imprime en consola el nombre y la especie del animal.
+
+Clase Perro (hereda de Animal):
+
+Propósito: Representa un perro específico, añadiendo el atributo raza además de los atributos heredados de Animal.
+
+Atributos:
+
+nombre: Atributo heredado de Animal.
+
+especie: Atributo heredado de Animal.
+
+raza: La raza del perro (ej. "Labrador").
+
+Métodos:
+
+__init__(self, nombre, especie, raza): Constructor que inicializa los atributos heredados de Animal y el nuevo atributo raza. Se utiliza super() para llamar al constructor de la clase base Animal.
+
+imprimir_info(self): Sobrescribe el método imprimir_info de la clase base para incluir también la raza. Llama a super().imprimir_info() para imprimir la información básica (nombre y especie) antes de imprimir la raza.
+
+Resumen:
+Este script muestra cómo utilizar la herencia en programación orientada a objetos para extender la funcionalidad de una clase base. La clase Perro hereda de la clase Animal, añadiendo el atributo raza y sobrescribiendo el método imprimir_info para incluir la raza junto con el nombre y la especie del animal.
 
